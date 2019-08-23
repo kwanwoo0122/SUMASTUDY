@@ -1,0 +1,63 @@
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar {
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #000000;
+  transition: all 0.3s;
+  border-right: 1px solid #e0e0e0;
+}
+
+#sidebar .sidebar-header img {
+  width: 150px;
+  height: auto;
+}
+
+#sidebar ul li a {
+  padding: 5px;
+  font-size: 11px;
+  display: inline-block;
+  color: #666666;
+}
+
+#sidebar ul li img {
+  margin-left: 8px;
+  width: 18px;
+}
+
+#sidebar ul li:hover {
+  color: #666666;
+  background: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+
+  .main {
+    width: 100%;
+  }
+}
+
+body {
+  font-family: '배달의민족 도현', sans-serif;
+  background: #fafafa;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.main {
+  width: 100%;
+}

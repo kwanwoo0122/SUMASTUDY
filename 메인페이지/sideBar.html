@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="sideBar.css">
+  <title>SIDEBAR</title>
+</head>
+
+<body>
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+  </script>
+  <div class="wrapper">
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <img src="01.main_logo.svg" />
+      </div>
+
+      <ul class="list-unstyled">
+        <li>
+          <img src="02.MSD_MINI.svg" />
+          <a href="#">매수답 MINI</a>
+        </li>
+        <li>
+          <img src="03.MSD_HIGH.svg" />
+          <a href="#">매수답 HIGH</a>
+        </li>
+        <li>
+          <img src="04.MSD_FINAL.svg" />
+          <a href="#">매수답 FINAL</a>
+        </li>
+        <li>
+          <img src="05.MSD_keychul.svg" />
+          <a href="#">매수답 기출</a>
+        </li>
+        <li>
+          <img src="06.MSD_sunung.svg" />
+          <a href="#">매수답 수능</a>
+        </li>
+        <li>
+          <img src="07.MSD_TV.svg" />
+          <a href="#">매수답 TV</a>
+        </li>
+        <li>
+          <img src="08.MSD_QnA.svg" />
+          <a href="#">매수답 QnA</a>
+        </li>
+        <li>
+          <img src="09.MSD_info.svg" />
+          <a href="#">입시정보</a>
+        </li>
+        <li>
+          <img src="10.MSD_planner.svg" />
+          <a href="#">매수답 Planner</a>
+        </li>
+        <li>
+          <img src="11.MSD_myclass.svg" />
+          <a href="#">내강의실 - 고1 심화반</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+        <div id="content">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+                <span>Toggle Sidebar</span>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </nav>
+      <content>
+        2
+      </content>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#sidebarCollapse").on("click", function () {
+        $("#sidebar").toggleClass("active");
+      });
+    });
+  </script>
+</body>
+
+</html>
