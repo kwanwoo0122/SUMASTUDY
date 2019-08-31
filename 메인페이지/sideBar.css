@@ -3,7 +3,8 @@
   align-items: stretch;
 }
 
-#sidebar {
+/* sidebar style */
+.sidebar {
   min-width: 150px;
   max-width: 150px;
   min-height: 100vh;
@@ -13,41 +14,44 @@
   border-right: 1px solid #e0e0e0;
 }
 
-#sidebar .sidebar-header img {
+.sidebar.active {
+  margin-left: -150px;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.sidebar .sidebar__header img {
   width: 150px;
   height: auto;
 }
 
-#sidebar ul li a {
+.sidebar ul li a {
   padding: 5px;
   font-size: 11px;
   display: inline-block;
   color: #666666;
 }
 
-#sidebar ul li img {
+.sidebar ul li img {
   margin-left: 8px;
   width: 18px;
 }
 
-#sidebar ul li:hover {
+.sidebar ul li:hover {
   color: #666666;
   background: #f2f2f2;
 }
 
 @media (max-width: 768px) {
-  #sidebar {
-    margin-left: -250px;
+  .sidebar {
+    margin-left: -150px;
   }
 
-  .main {
-    width: 100%;
+  .sidebar.active {
+    margin-left: 0;
   }
-}
-
-body {
-  font-family: '배달의민족 도현', sans-serif;
-  background: #fafafa;
 }
 
 a,
@@ -58,6 +62,58 @@ a:focus {
   transition: all 0.3s;
 }
 
-.main {
+/* sidebar style end */
+
+body {
+  font-family: '배달의민족 도현', sans-serif;
+  background: #f2f2f2;
+}
+
+.home {
   width: 100%;
+}
+
+.navbar {
+  min-height: 10%;
+}
+
+.home header img {
+  width: 25px;
+  height: auto;
+}
+
+.nav-link,
+.dropdown-toggle:hover {
+  color: #727272;
+}
+
+.main {
+  display: grid;
+}
+
+.main__notice {
+  color: #666666;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.c-card--shadow {
+  box-shadow: 15px 19px 32px -18px rgba(21, 19, 19, .07);
+}
+
+.c-card {
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 1%;
+}
+
+.main__top {
+  margin-top: 2%;
+  margin-left: 1.65%;
+}
+
+.main__bottom {
+  padding: 11rem;
+  margin-left: 2%;
 }
