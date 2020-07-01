@@ -29,7 +29,7 @@ a[data-toggle="collapse"] {
 
 .sidebar ul li a {
   padding: 5px;
-  font-size: 11px;
+  font-size: 15px;
   display: inline-block;
   color: #666666;
 }
@@ -65,7 +65,7 @@ a:focus {
 /* sidebar style end */
 
 body {
-  font-family: '배달의민족 도현', sans-serif;
+  font-family: 'Do Hyeon', sans-serif;
   background: #f2f2f2;
 }
 
